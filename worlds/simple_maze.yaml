@@ -1,0 +1,11 @@
+# A zigzag corridor: three partial walls force the robot to alternate
+# between the bottom and top of the arena to reach the goal -- a good
+# first "navigate using only /scan" challenge.
+name: simple_maze
+dimensions: {width: 10.0, height: 7.5}
+walls:
+  - {cx: 3.0, cy: 5.5, hx: 0.1, hy: 2.0}   # blocks y > 3.5 at x=3, gap below
+  - {cx: 6.0, cy: 2.0, hx: 0.1, hy: 2.0}   # blocks y < 4.0 at x=6, gap above
+  - {cx: 8.0, cy: 5.5, hx: 0.1, hy: 2.0}   # blocks y > 3.5 at x=8, gap below
+start_zone: {x: 1.0, y: 1.0, radius: 0.4}
+goal_zone: {x: 9.0, y: 1.0, radius: 0.4}
