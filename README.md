@@ -303,9 +303,6 @@ start_zone: {x: 1.0, y: 1.0, radius: 0.5}
 goal_zone: {x: 9.0, y: 7.0, radius: 0.5}
 ```
 
-**Q: I got permission denied pushing to GitHub. What do I do?**  
-A: Use SSH (`git@github.com:...`) instead of HTTPS. Or generate a personal access token at https://github.com/settings/tokens and use it as your password.
-
 ---
 
 ## Development & Testing
